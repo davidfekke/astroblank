@@ -1,0 +1,33 @@
+---
+import Nav from '../components/Nav.astro'
+
+const currentYear = new Date().getFullYear();
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>JaxNode</title>
+	</head>
+
+	<body>
+		<div class="flex flex-col min-h-screen flex-1 flex-grow">
+			<Nav />
+			<div class="container mx-auto">
+					<!-- <main class="py-2 px-0 flex flex-col flex-1 items-start text-lg flex-grow"> -->
+					 <main class="max-w-[1174px] mx-auto py-2">
+							<slot />
+					</main>
+			</div>
+			<footer class="flex justify-center mt-auto bg-black text-white py-5 px-0"> { /* flex flex-1 justify-center items-center  */ }
+					Copyright &copy; {currentYear} JaxNode User Group. All rights reserved. || <a href="/terms" class="mx-1">Terms and Conditions</a> || <a href="/privacy" class="mx-1">Privacy Policy</a>
+			</footer>
+	</div>
+
+
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

@@ -10,10 +10,10 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>JaxNode</title>
 	</head>
+
 	<body>
-    <div class="container mx-auto p-4">
-      <slot />  
-    </div>
-		
+		<div class="flex flex-col min-h-screen flex-1 flex-grow">
+			<slot />
+		</div>
 	</body>
 </html>
