@@ -1,0 +1,8 @@
+---
+import MyLayout from '../layouts/MyLayout.astro';
+import WeatherComponent from '../components/Weather.tsx';
+---
+<MyLayout>
+	<h1 class="text-6xl font-bold">Weather</h1>
+  <WeatherComponent client:load />
+</MyLayout>

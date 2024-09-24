@@ -1,0 +1,23 @@
+{
+  "CreateReactFile": {
+    "scope": "typescriptreact",
+    "prefix": "CreateReactFile",
+    "description": "Creates a default content for a JSX file",
+    "body": [
+      "import React from 'react';",
+      "",
+      "export interface ${1:ComponentName}Props {}",
+      "",
+      "const ${1:ComponentName}: React.FC<${1:ComponentName}Props> = ({}): JSX.Element => {",
+      "  return (",
+      "    <>${1:ComponentName}</>",
+      "  );",
+      "};",
+      "",
+      "${1:ComponentName}.displayName = '${1:ComponentName}';",
+      "",
+      "export default ${1:ComponentName};",
+      "",
+    ],
+  }
+}
