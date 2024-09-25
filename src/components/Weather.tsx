@@ -38,7 +38,9 @@ const Weather: React.FC<WeatherProps> = (): JSX.Element => {
 
   return (
     <div>
-      <button className="bg-[#672423] text-white p-3 rounded-xl" onClick={handleGetWeather}>Get Weather</button>
+      <button 
+        className="bg-[#3448b4] text-white p-3 rounded-xl drop-shadow-xl hover:bg-[#2a3a8a] my-3" 
+        onClick={handleGetWeather}>Get Weather</button>
       <h3 className="text-xl font-bold">Weather</h3>
       {weatherData.length === 0 && <p>No weather data</p>}
       {weatherData.length > 0 && (<>
